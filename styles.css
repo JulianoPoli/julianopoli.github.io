@@ -22,3 +22,310 @@ h1{font-size:clamp(48px,7vw,92px);line-height:.98;letter-spacing:-.055em;margin:
 .contact{margin:40px 6vw 110px;padding:110px 8vw;border:1px solid rgba(74,168,255,.22);border-radius:13px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(36,133,224,.16),transparent 55%),#07111f}.contact .section-label{margin-bottom:30px}.contact h2{font-size:clamp(42px,6vw,75px);line-height:1;letter-spacing:-.055em;margin:0 0 22px}.contact p{color:var(--muted);margin-bottom:30px}
 footer{border-top:1px solid var(--line);padding:25px 6vw;display:flex;justify-content:space-between;gap:20px;color:#506981;font:500 9px "JetBrains Mono";letter-spacing:.06em}footer a{color:#7d9ab5}
 @media(max-width:850px){.nav{padding:0 5vw}.nav nav a:not(.nav-cta){display:none}.hero{padding:80px 5vw 40px}.hero-grid,.two-col{grid-template-columns:1fr;gap:55px}.hero-card{max-width:520px}.section{padding:85px 5vw}.expertise-grid,.credentials,.article-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.timeline-item{grid-template-columns:1fr;gap:10px}.contact{margin:20px 5vw 70px;padding:75px 7vw}footer{padding:22px 5vw;flex-direction:column}h1{font-size:clamp(48px,15vw,75px)}}
+
+.project-repo{display:inline-block;margin:0 0 17px;color:var(--cyan);font:500 9px "JetBrains Mono";letter-spacing:.1em}.project-repo:hover{color:#fff}
+
+/* =========================================================
+   PROJECTS CTA / HOME
+========================================================= */
+
+.projects-nav {
+    color: var(--cyan) !important;
+}
+
+
+/* Featured projects */
+
+.featured-projects {
+    padding-top: 80px;
+}
+
+
+.featured-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+.featured-project-card {
+    position: relative;
+
+    display: block;
+
+    min-height: 360px;
+
+    padding: 34px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(13, 32, 54, .88),
+            rgba(6, 14, 25, .92)
+        );
+
+    overflow: hidden;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.featured-project-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    right: -100px;
+    bottom: -130px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(50, 155, 255, .18),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+.featured-project-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(74, 168, 255, .45);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, .35);
+}
+
+
+.featured-project-number {
+
+    position: absolute;
+
+    top: 25px;
+    right: 27px;
+
+    color: #46627e;
+
+    font:
+        500 10px
+        "JetBrains Mono";
+}
+
+
+.featured-project-icon {
+
+    font-size: 27px;
+
+    color: var(--cyan);
+
+    margin-bottom: 20px;
+}
+
+
+.featured-project-kicker {
+
+    color: #63809c;
+
+    font:
+        500 9px
+        "JetBrains Mono";
+
+    letter-spacing: .12em;
+
+    margin-bottom: 12px;
+}
+
+
+.featured-project-card h3 {
+
+    font-size: 27px;
+
+    line-height: 1.1;
+
+    letter-spacing: -.035em;
+
+    margin: 0 0 14px;
+}
+
+
+.featured-project-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    max-width: 560px;
+}
+
+
+.featured-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 25px;
+}
+
+
+.featured-tags span {
+
+    padding: 6px 8px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius: 4px;
+
+    color: #7791ac;
+
+    font:
+        500 8px
+        "JetBrains Mono";
+}
+
+
+.featured-project-footer {
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 34px;
+
+    color: var(--cyan);
+
+    font:
+        500 9px
+        "JetBrains Mono";
+
+    letter-spacing: .08em;
+}
+
+
+/* Link above cards */
+
+.project-link {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: var(--cyan);
+
+    font:
+        500 10px
+        "JetBrains Mono";
+
+    letter-spacing: .08em;
+}
+
+
+.project-link:hover {
+
+    color: white;
+
+}
+
+
+/* Bottom CTA */
+
+.projects-cta {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 18px;
+
+    padding: 25px 28px;
+
+    border:
+        1px solid
+        rgba(74, 168, 255, .18);
+
+    border-radius: 9px;
+
+    background:
+        rgba(8, 19, 33, .65);
+}
+
+
+.projects-cta > div span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--cyan);
+
+    font:
+        500 9px
+        "JetBrains Mono";
+
+    letter-spacing: .1em;
+}
+
+
+.projects-cta strong {
+
+    font-size: 15px;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .featured-project-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .featured-project-card {
+
+        min-height: 350px;
+
+    }
+
+
+    .projects-cta {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .hero-actions {
+
+        flex-wrap: wrap;
+
+    }
+
+}
