@@ -73,7 +73,6 @@ const data = {
       <div class="contact-list">
         <a class="contact-link" href="https://www.linkedin.com/in/julianopoli" target="_blank"><span>LinkedIn</span><span>↗</span></a>
         <a class="contact-link" href="https://github.com/JulianoPoli" target="_blank"><span>GitHub</span><span>↗</span></a>
-        <a class="contact-link" href="https://github.com/JulianoPoli/SAST-Main" target="_blank"><span>Mechanism / SAST-Main</span><span>↗</span></a>
       </div>`
   },
   en: {
